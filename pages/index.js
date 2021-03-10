@@ -17,20 +17,26 @@ export default function Home() {
   const [post, setPost] = useState(null)
   const [isLoading, setIsLoading] = useState(false)
 
-  // useEffect(async () => {
-  //   setIsLoading(true)
-  //   const response = await fetch('/api/article')
-  //   if (response.status == 200) {
-  //     const data = await response.json()
-  //     setPost(data)
-  //     setIsLoading(false)
-  //   } else {
-  //     setIsLoading(false)
-  //   }
-  // }, [])
+  useEffect(async () => {
+    setIsLoading(true)
+    const response = await fetch('/api/article')
+    if (response.status == 200) {
+      const data = await response.json()
+      setPost(data)
+      setIsLoading(false)
+    } else {
+      setIsLoading(false)
+    }
+  }, [])
 
   const injectProfileInfo = (markup) => {
-    return ReactDOMServer.renderToString(getProfileInfo()) + (markup ?? '')
+    return ReactDOMServer.renderToString(getProfileInfo())
+      +
+      ReactDOMServer.renderToString(
+        <div className="col-span-3 text-xl leading-loose" dangerouslySetInnerHTML={{ __html: markup ?? '' }}>
+        </div>
+      )
+
   }
 
   const getProfileInfo = () => {
@@ -58,6 +64,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Hacker Noon</title>
+        <link href="/assets/fa/css/all.css" rel="stylesheet" />
       </Head>
       <NavBar />
 
