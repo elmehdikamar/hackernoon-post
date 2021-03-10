@@ -69,7 +69,7 @@ export default function Home() {
         :
         //post &&
         <div className="flex flex-col pt-5 px-4 mx-auto max-w-screen-xl">
-          <h1 className="leading-normal font-mono text-3xl font-semibold text-gray-800 sm:text-center">Step by Step Guide to Create 3 Different Types of Loading Screens in React</h1>
+          <h1 className="leading-normal font-mono text-4xl font-semibold text-gray-800 sm:text-center">Step by Step Guide to Create 3 Different Types of Loading Screens in React</h1>
           <div className="flex flex-wrap">
             <div className="flex flex-row  w-full sm:w-auto items-center mt-6">
               <div className="flex flex-row flex-1 space-x-3 items-center text-sm">
