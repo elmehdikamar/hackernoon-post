@@ -8,6 +8,8 @@ import Reactions from '../components/reactions';
 import AuthorAd from '../components/author_ad';
 import LineTitle from '../components/line_title';
 import TagItem from '../components/tag_item';
+import FooterLink from '../components/footer_link';
+import Footer from '../components/footer';
 
 
 export default function Home() {
@@ -101,7 +103,12 @@ export default function Home() {
             <TagItem title='#react' />
             <TagItem title='#react' />
           </div>
+          <div className="flex flex-col items-center mt-10">
+            <a href="#" className="bg-gray-900 hover:bg-gray-800 py-3 px-5 text-brand text-3xl hover:text-4xl font-bold font-mono border-4 border-brand">Join Hacker Noon</a>
+            <p className="text-gray-600 mt-5 font-mono text-sm">Create your free account to unlock your custom reading experience.</p>
+          </div>
         </div>}
+      <Footer />
     </div>
   )
 }
