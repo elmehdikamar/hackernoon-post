@@ -59,7 +59,7 @@ export default function Home() {
       <Head>
         <title>Hacker Noon</title>
       </Head>
-      {/* <NavBar /> */}
+      <NavBar />
 
       {isLoading
         ?
@@ -68,8 +68,8 @@ export default function Home() {
         </div>
         :
         //post &&
-        <div className="flex flex-col pt-5 px-4">
-          <h1 className="leading-normal font-mono text-3xl font-semibold text-gray-800">Step by Step Guide to Create 3 Different Types of Loading Screens in React</h1>
+        <div className="flex flex-col pt-5 px-4 mx-auto max-w-screen-xl">
+          <h1 className="leading-normal font-mono text-3xl font-semibold text-gray-800 sm:text-center">Step by Step Guide to Create 3 Different Types of Loading Screens in React</h1>
           <div className="flex flex-wrap">
             <div className="flex flex-row  w-full sm:w-auto items-center mt-6">
               <div className="flex flex-row flex-1 space-x-3 items-center text-sm">
@@ -88,8 +88,8 @@ export default function Home() {
               </button>
             </div>
             <Reactions className="w-full sm:w-auto mt-6 justify-end sm:flex-1" />
-            {/* <img className="w-full h-auto mt-5" src="https://hackernoon.com/images/541r0RExUOQ3nFAQs7oJuST9Axf2-g6aq337h.jpeg" /> */}
-            <div className="w-full grid grid-cols-5 gap-10" dangerouslySetInnerHTML={{ __html: injectProfileInfo(post?.markup) }}></div>
+            <img className="w-full h-auto mt-5" src="https://hackernoon.com/images/541r0RExUOQ3nFAQs7oJuST9Axf2-g6aq337h.jpeg" />
+            <div className="w-full grid grid-cols-5 gap-10 mt-10" dangerouslySetInnerHTML={{ __html: injectProfileInfo(post?.markup) }}></div>
           </div>
           <Reactions className="mt-5 mx-auto" />
           <AuthorAd />
@@ -103,7 +103,7 @@ export default function Home() {
             <TagItem title='#react' />
             <TagItem title='#react' />
           </div>
-          <div className="flex flex-col items-center mt-10">
+          <div className="flex flex-col items-center mt-10 text-center">
             <a href="#" className="bg-gray-900 hover:bg-gray-800 py-3 px-5 text-brand text-3xl hover:text-4xl font-bold font-mono border-4 border-brand">Join Hacker Noon</a>
             <p className="text-gray-600 mt-5 font-mono text-sm">Create your free account to unlock your custom reading experience.</p>
           </div>

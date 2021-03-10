@@ -8,9 +8,9 @@ export default function AuthorAd(props) {
                     <a className="mt-5 font-mono font-semibold border-b-4 border-limegreen-400 hover:border-0 hover:border-brand hover:bg-brand" href="#">@codebucks</a>
                     <span className="font-mono font-semibold mt-3">CodeBucks</span>
                 </div>
-                <div className="flex flex-1 flex-row">
+                <div className="flex flex-1 flex-row flex-shrink-0">
                     <button className="text-brand flex flex-row items-center space-x-2 font-semibold text-lg" type="button">
-                        <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg className="h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                         </svg>
                         <span>Subscribe to Learn ReactJS by building!</span>
