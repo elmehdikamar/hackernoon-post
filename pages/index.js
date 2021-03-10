@@ -38,6 +38,12 @@ export default function Home() {
       )
       +
       ReactDOMServer.renderToString(
+        <div className="col-start-2 col-end-5 mx-auto">
+          <Reactions className="my-5 mx-auto" />
+        </div>
+      )
+      +
+      ReactDOMServer.renderToString(
         <div className="col-start-2 col-end-5">
           <AuthorAd />
         </div>
@@ -105,7 +111,6 @@ export default function Home() {
             <img className="w-full h-auto mt-5" src="https://hackernoon.com/images/541r0RExUOQ3nFAQs7oJuST9Axf2-g6aq337h.jpeg" />
             <div className="w-full grid grid-cols-5 gap-10 mt-10" dangerouslySetInnerHTML={{ __html: injectProfileInfo(post?.markup) }}></div>
           </div>
-          <Reactions className="mt-5 mx-auto" />
           <LineTitle className="mt-10" title="RELATED" />
           <LineTitle className="mt-10" title="TAGS" />
           <div className="flex flex-wrap justify-center mt-8">

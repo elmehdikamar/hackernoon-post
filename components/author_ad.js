@@ -1,7 +1,14 @@
 export default function AuthorAd(props) {
     return (
         <div className={`flex flex-col ${props.className ?? ''}`}>
-            <p className="ml-auto mb-4">Share this story</p>
+            <p className="ml-auto mb-4">Share this story
+            <span className="ml-4 text-limegreen-600 space-x-4">
+                    <a href="#"><i className="fab fa-twitter fa-lg"></i></a>
+                    <a href="#"><i className="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#"><i className="fab fa-linkedin-in fa-lg"></i></a>
+                    <a href="#"><i className="fa fa-envelope fa-lg"></i></a>
+                </span>
+            </p>
             <div className="flex flex-row bg-gray-900 ring-4 ring-brand p-4 items-start">
                 <div className="flex-1 flex flex-col items-start text-sm text-brand">
                     <img className="w-12 h-12 ring-4 ring-gray-300" src="https://hackernoon.com/images/541r0RExUOQ3nFAQs7oJuST9Axf2-842316b.jpeg" />
