@@ -33,18 +33,18 @@ export default function Home() {
     return ReactDOMServer.renderToString(getProfileInfo())
       +
       ReactDOMServer.renderToString(
-        <div id="post-content" className="col-span-5 md:col-span-3 grid gap-8 text-xl text-gray-900 leading-loose" dangerouslySetInnerHTML={{ __html: markup ?? '' }}>
+        <div id="post-content" className="col-span-5 md:col-span-3 grid grid-cols-1 gap-8 text-xl text-gray-900 leading-loose" dangerouslySetInnerHTML={{ __html: markup ?? '' }}>
         </div>
       )
       +
       ReactDOMServer.renderToString(
-        <div className="col-start-2 col-end-5 mx-auto">
+        <div className="col-start-1 col-end-6 md:col-start-2 md:col-end-5 mx-auto">
           <Reactions className="my-5 mx-auto" />
         </div>
       )
       +
       ReactDOMServer.renderToString(
-        <div className="col-start-2 col-end-5">
+        <div className="col-start-1 col-end-6 md:col-start-2 md:col-end-5">
           <AuthorAd />
         </div>
       )
