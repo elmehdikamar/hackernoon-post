@@ -10,5 +10,6 @@ export default function Home() {
         <title>Hacker Noon</title>
       </Head>
       <NavBar />
+    </div>
   )
 }
