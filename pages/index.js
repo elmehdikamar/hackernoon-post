@@ -6,6 +6,8 @@ import { ClipLoader } from 'react-spinners'
 import ReactDOMServer from 'react-dom/server'
 import Reactions from '../components/reactions';
 import AuthorAd from '../components/author_ad';
+import LineTitle from '../components/line_title';
+import TagItem from '../components/tag_item';
 
 
 export default function Home() {
@@ -89,6 +91,16 @@ export default function Home() {
           </div>
           <Reactions className="mt-5 mx-auto" />
           <AuthorAd />
+          <LineTitle className="mt-10" title="RELATED" />
+          <LineTitle className="mt-10" title="TAGS" />
+          <div className="flex flex-wrap justify-center mt-8">
+            <TagItem title='#react' />
+            <TagItem title='#react' />
+            <TagItem title='#react' />
+            <TagItem title='#react' />
+            <TagItem title='#react' />
+            <TagItem title='#react' />
+          </div>
         </div>}
     </div>
   )
