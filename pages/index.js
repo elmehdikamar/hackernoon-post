@@ -33,14 +33,20 @@ export default function Home() {
     return ReactDOMServer.renderToString(getProfileInfo())
       +
       ReactDOMServer.renderToString(
-        <div className="col-span-3 text-xl leading-loose" dangerouslySetInnerHTML={{ __html: markup ?? '' }}>
+        <div id="post-content" className="col-span-5 md:col-span-3 grid gap-8 text-xl text-gray-900 leading-loose" dangerouslySetInnerHTML={{ __html: markup ?? '' }}>
+        </div>
+      )
+      +
+      ReactDOMServer.renderToString(
+        <div className="col-start-2 col-end-5">
+          <AuthorAd />
         </div>
       )
 
   }
 
   const getProfileInfo = () => {
-    return <div className="flex flex-col items-start text-sm">
+    return <div className="col-span-5 md:col-span-1 flex flex-col items-start text-sm">
       <img className="w-12 h-12 ring-4 ring-gray-300" src="https://hackernoon.com/images/541r0RExUOQ3nFAQs7oJuST9Axf2-842316b.jpeg" />
       <a className="mt-5 font-mono font-semibold border-b-4 border-limegreen-300 hover:border-0 hover:border-brand hover:bg-brand" href="#">@codebucks</a>
       <span className="text-gray-700 font-mono font-semibold mt-1">CodeBucks</span>
@@ -64,6 +70,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Hacker Noon</title>
+        <link href="/assets/css/styles.css" rel="stylesheet" />
         <link href="/assets/fa/css/all.css" rel="stylesheet" />
       </Head>
       <NavBar />
@@ -99,7 +106,6 @@ export default function Home() {
             <div className="w-full grid grid-cols-5 gap-10 mt-10" dangerouslySetInnerHTML={{ __html: injectProfileInfo(post?.markup) }}></div>
           </div>
           <Reactions className="mt-5 mx-auto" />
-          <AuthorAd />
           <LineTitle className="mt-10" title="RELATED" />
           <LineTitle className="mt-10" title="TAGS" />
           <div className="flex flex-wrap justify-center mt-8">
