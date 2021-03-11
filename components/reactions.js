@@ -1,7 +1,7 @@
 export default function Reactions(props) {
     return (
         <div className={`flex flex-row space-x-1 items-center ${props.className ?? ''}`}>
-            <span className="font-semibold text-lg pr-2 font-mono">10</span>
+            <span className="font-semibold text-lg pr-2 font-mono">{props.total ?? 0}</span>
             <button type="button" className="w-8 h-8 text-gray-300 hover:text-red-500">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />

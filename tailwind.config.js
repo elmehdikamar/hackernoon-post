@@ -133,6 +133,7 @@ module.exports = {
   },
   variants: {
     extend: {
+      display: ['group-hover', 'group-focus'],
       fontSize: ['hover', 'focus']
     },
   },
