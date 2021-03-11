@@ -2,6 +2,8 @@
 
 El Mehdi Kamar
 
+[Demo](https://cocky-almeida-f6689a.netlify.app)
+
 ## Installation
 
 1. Clone repository
