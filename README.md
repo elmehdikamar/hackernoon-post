@@ -1,7 +1,5 @@
 # hackernoon-post
 
-El Mehdi Kamar
-
 [Demo](https://cocky-almeida-f6689a.netlify.app)
 
 ## Installation
@@ -11,7 +9,7 @@ El Mehdi Kamar
 3. **npm run dev** to run the app on a development environment
 
 
-## Frameworks used:
+## Frameworks & libraries:
 
 - React.js
 - NextJS v10.0.8
