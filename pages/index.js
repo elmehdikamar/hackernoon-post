@@ -74,7 +74,7 @@ export default function Home() {
         <link href="/assets/css/styles.css" rel="stylesheet" />
         <link href="/assets/fa/css/all.css" rel="stylesheet" />
       </Head>
-      <NavBar />
+      <NavBar postTitle={post?.title} postAuthor={post?.profile?.handle} />
 
       {isLoading
         ?
